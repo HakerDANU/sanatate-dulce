@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/11d573a92f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/logo.png">
+    <title>Sănătate dulce</title>
+</head>
+<body>
+    <header><aside class="menu"><a href="../index.html"><img src="../images/icon.png" alt=""></i></a><my><a href="../index.html"><i class="fas fa-home"></i>Home  </a><a href="magazin.html"><i class="fas fa-shopping-cart"></i>Produse  </a><a href="galerie.html"><i class="fas fa-images"></i>Galerie   </a><a href="contacte.html"><i class="fas fa-address-book"></i>Contacte   </a><a href="cos.html"><i class="fas fa-shopping-basket"></i>Coș   </a></my></aside>
+    </header><br><br><main>
+        <p class="nome"><b>Coș</b></p>
+        <table class="cos" >
+            <tr>
+                <td class="prim"></td>
+                <td>Denumirea</td>
+                <td>Prețul</td>
+                <td>Cantiteatea</td>
+                <td>Prețul total</td>
+                <td>Comandă</td>
+            </tr>
+            <tr id="co001">
+                <td><button class="del" onclick="pd001()">Ștergere</button><img src="../images/Produse_img/Cioco miere.jpg" alt=""></td>
+                <td>Cioco<br>miere</td>
+                <td>65 lei</td>
+                <td><button onclick="rev001()">-</button><input readonly="readonly" type="number" id="ex001"><button onclick="add001()">+</button></td>
+                <td><input readonly="readonly" type="number" id="tot001">lei</td>
+                <td><a href="cumpără/cioco_miere.html"><i class="fas fa-shopping-cart"></i></a></td>
+            </tr>
+            <tr id="co002">
+                <td><button class="del" onclick="pd002()">Ștergere</button><img src="../images/Produse_img/Mărturii pentru evenimente.jpg" alt=""></td>
+                <td>Mărturii pentru<br>evenimente</td>
+                <td>1 leu</td>
+                <td><button onclick="rev002()">-</button><input readonly="readonly" type="number" id="ex002"><button onclick="add002()">+</button></td>
+                <td><input readonly="readonly" type="number" id="tot002">lei</td>
+                <td><a href="cumpără/marturi.html"><i class="fas fa-shopping-cart"></i></a></td>
+            </tr>
+        </table>
+    </main>
+    <footer><b><p>Briceni 2022</p>
+        <p><i class="far fa-copyright"></i>Toate drepturile sunt rezervate</p></b>
+        </footer>
+    <script src="../js/produse/produse001.js"></script>
+    <script src="../js/produse/produse002.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

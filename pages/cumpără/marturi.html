@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://kit.fontawesome.com/11d573a92f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../../images/logo.png">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <title>Sănătate dulce</title>
+</head>
+
+<body>
+    <a class="back" href="../produse/cioco_miere.html"><i class="fas fa-long-arrow-alt-left"></i></a>
+    <h1 align="center">Comandare produs</h1>
+    <form id="form002"  method="post"  action="https://sheetdb.io/api/v1/nzm6v943v6w1k" >
+        <label for="name">Numele complet</label><br>
+        <table class="prod">
+            <tr>
+                <td></td>
+                <td>Denumirea</td>
+                <td>Prețul</td>
+                <td>Cantiteatea</td>
+                <td>Prețul total</td>
+            </tr>
+            <tr>
+                <td><img src="../../images/Produse_img/Mărturii pentru evenimente.jpg" alt=""></td>
+                <td>Mărturii pentru <br> evenimente</td>
+                <td>1 leu</td>
+                <td><a href="#" onclick="rev002()">-</a><input readonly="readonly" type="number" name="data[Cantitatea]" id="ex002"><a href="#" onclick="add002()">+</a></td>
+                <td><input name="data[Preț]" readonly="readonly" type="number" id="tot002">lei</td>
+            </tr>
+        </table>
+        <input id="pr002" type="hidden" name="data[Produs]" value="Mărturii pentru evenimente">
+        <input id="nume" name="data[Nume]" type="text" placeholder="Nume, Prenume" required><br>
+        <label  for="email">E-mail</label><br>
+        <input id="email" name="data[Email]" type="email" placeholder="E-mail"><br>
+        <label for="phone">Numărul de telefon</label><br>
+        <input id="telefon" name="data[Telefon]" type="tel" placeholder="Număr de telefon" required><br>
+        <label  for="address">Adresa</label><br>
+        <input id="adresa" name="data[Adresa]" type="text" placeholder="Strada, Localitatea, Județul" required><br>
+        <p>**Srieți adresa corect ca să primiți comanda**</p>
+        <table class="prod" >
+        <button type="submit" class="buy">Comandă</button>
+    </form>
+
+    <script src="../../js/produse/produse002.js"></script>
+    <script src="../../js/produse/form002.js"></script>
+</body>
+
+</html>
